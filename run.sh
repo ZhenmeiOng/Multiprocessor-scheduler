@@ -1,0 +1,1 @@
+docker run --rm -it --cpus 4 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --name="multiprocessor-container" -v "${PWD}/workspace":/multiproc -w="/multiproc" multiprocessor-image

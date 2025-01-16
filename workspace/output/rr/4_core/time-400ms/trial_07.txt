@@ -1,0 +1,380 @@
+Time  Ru Re Wa      CPU 0    CPU 1    CPU 2    CPU 3        < I/O Queue <
+===== == == ==      ======== ======== ======== ========     =============
+0.0   0  0  0       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < <
+0.1   1  0  0       (IDLE)   (IDLE)   (IDLE)   Iapache      < <
+0.2   1  0  0       (IDLE)   (IDLE)   (IDLE)   Iapache      < <
+0.3   1  0  0       (IDLE)   (IDLE)   (IDLE)   Iapache      < <
+0.4   0  0  1       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache <
+0.5   0  0  1       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache <
+0.6   1  0  0       (IDLE)   Iapache  (IDLE)   (IDLE)       < <
+0.7   1  0  0       (IDLE)   Iapache  (IDLE)   (IDLE)       < <
+0.8   1  0  0       (IDLE)   Iapache  (IDLE)   (IDLE)       < <
+0.9   1  0  0       (IDLE)   Iapache  (IDLE)   (IDLE)       < <
+1.0   0  0  1       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache <
+1.1   1  0  1       (IDLE)   (IDLE)   Ibash    (IDLE)       < Iapache <
+1.2   1  0  1       (IDLE)   (IDLE)   Ibash    (IDLE)       < Iapache <
+1.3   1  0  1       (IDLE)   (IDLE)   Ibash    (IDLE)       < Iapache <
+1.4   1  0  1       (IDLE)   (IDLE)   Ibash    (IDLE)       < Iapache <
+1.5   1  0  1       Iapache  (IDLE)   (IDLE)   (IDLE)       < Ibash <
+1.6   1  0  1       Iapache  (IDLE)   (IDLE)   (IDLE)       < Ibash <
+1.7   0  0  2       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Iapache <
+1.8   0  0  2       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Iapache <
+1.9   0  0  2       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Iapache <
+2.0   1  0  1       (IDLE)   (IDLE)   (IDLE)   Ibash        < Iapache <
+2.1   2  0  1       (IDLE)   Imozilla (IDLE)   Ibash        < Iapache <
+2.2   2  0  1       (IDLE)   Imozilla (IDLE)   Ibash        < Iapache <
+2.3   1  0  2       (IDLE)   Imozilla (IDLE)   (IDLE)       < Iapache Ibash <
+2.4   1  0  2       (IDLE)   Imozilla (IDLE)   (IDLE)       < Iapache Ibash <
+2.5   2  0  1       (IDLE)   Imozilla Iapache  (IDLE)       < Ibash <
+2.6   2  0  1       (IDLE)   Imozilla Iapache  (IDLE)       < Ibash <
+2.7   2  0  1       (IDLE)   Imozilla Iapache  (IDLE)       < Ibash <
+2.8   0  0  3       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Imozilla Iapache <
+2.9   0  0  3       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Imozilla Iapache <
+3.0   0  0  3       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Imozilla Iapache <
+3.1   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Ibash Imozilla Iapache <
+3.2   2  0  2       Ibash    (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache <
+3.3   2  0  2       Ibash    (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache <
+3.4   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+3.5   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+3.6   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+3.7   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+3.8   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+3.9   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+4.0   1  0  3       (IDLE)   (IDLE)   (IDLE)   Ccpu         < Imozilla Iapache Ibash <
+4.1   1  0  4       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Ccpu <
+4.2   1  0  4       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Ccpu <
+4.3   1  0  4       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Ccpu <
+4.4   1  0  4       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Ccpu <
+4.5   2  0  3       Cgcc     (IDLE)   Imozilla (IDLE)       < Iapache Ibash Ccpu <
+4.6   2  0  3       Cgcc     (IDLE)   Imozilla (IDLE)       < Iapache Ibash Ccpu <
+4.7   2  0  3       Cgcc     (IDLE)   Imozilla (IDLE)       < Iapache Ibash Ccpu <
+4.8   3  0  2       Cgcc     (IDLE)   Imozilla Iapache      < Ibash Ccpu <
+4.9   2  0  3       Cgcc     (IDLE)   (IDLE)   Iapache      < Ibash Ccpu Imozilla <
+5.0   2  0  3       Cgcc     (IDLE)   (IDLE)   Iapache      < Ibash Ccpu Imozilla <
+5.1   3  0  3       Cgcc     Cspice   (IDLE)   Iapache      < Ibash Ccpu Imozilla <
+5.2   2  0  4       (IDLE)   Cspice   Ibash    (IDLE)       < Ccpu Imozilla Cgcc Iapache <
+5.3   2  0  4       (IDLE)   Cspice   Ibash    (IDLE)       < Ccpu Imozilla Cgcc Iapache <
+5.4   3  0  3       Ccpu     Cspice   Ibash    (IDLE)       < Imozilla Cgcc Iapache <
+5.5   3  0  3       Ccpu     Cspice   Ibash    (IDLE)       < Imozilla Cgcc Iapache <
+5.6   3  0  3       Ccpu     Cspice   Ibash    (IDLE)       < Imozilla Cgcc Iapache <
+5.7   2  0  4       Ccpu     Cspice   (IDLE)   (IDLE)       < Imozilla Cgcc Iapache Ibash <
+5.8   2  0  4       Ccpu     Cspice   (IDLE)   (IDLE)       < Imozilla Cgcc Iapache Ibash <
+5.9   2  0  4       Ccpu     Cspice   (IDLE)   (IDLE)       < Imozilla Cgcc Iapache Ibash <
+6.0   2  0  4       Ccpu     Cspice   (IDLE)   (IDLE)       < Imozilla Cgcc Iapache Ibash <
+6.1   1  0  6       (IDLE)   (IDLE)   (IDLE)   Cmysql       < Imozilla Cgcc Iapache Ibash Ccpu Cspice <
+6.2   1  0  6       (IDLE)   (IDLE)   (IDLE)   Cmysql       < Imozilla Cgcc Iapache Ibash Ccpu Cspice <
+6.3   1  0  6       (IDLE)   (IDLE)   (IDLE)   Cmysql       < Imozilla Cgcc Iapache Ibash Ccpu Cspice <
+6.4   1  0  6       (IDLE)   (IDLE)   (IDLE)   Cmysql       < Imozilla Cgcc Iapache Ibash Ccpu Cspice <
+6.5   2  0  5       Imozilla (IDLE)   (IDLE)   Cmysql       < Cgcc Iapache Ibash Ccpu Cspice <
+6.6   2  0  5       Imozilla (IDLE)   (IDLE)   Cmysql       < Cgcc Iapache Ibash Ccpu Cspice <
+6.7   3  0  4       Imozilla Cgcc     (IDLE)   Cmysql       < Iapache Ibash Ccpu Cspice <
+6.8   1  0  6       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Iapache Ibash Ccpu Cspice Imozilla Cmysql <
+6.9   1  0  6       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Iapache Ibash Ccpu Cspice Imozilla Cmysql <
+7.0   1  0  6       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Iapache Ibash Ccpu Cspice Imozilla Cmysql <
+7.1   2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Iapache Ibash Ccpu Cspice Imozilla Cmysql <
+7.2   2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Iapache Ibash Ccpu Cspice Imozilla Cmysql <
+7.3   3  0  5       Csim     Cgcc     (IDLE)   Iapache      < Ibash Ccpu Cspice Imozilla Cmysql <
+7.4   3  0  5       Csim     Cgcc     (IDLE)   Iapache      < Ibash Ccpu Cspice Imozilla Cmysql <
+7.5   2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Ibash Ccpu Cspice Imozilla Cmysql Iapache <
+7.6   2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Ibash Ccpu Cspice Imozilla Cmysql Iapache <
+7.7   2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Ibash Ccpu Cspice Imozilla Cmysql Iapache <
+7.8   3  0  5       Csim     Cgcc     Ibash    (IDLE)       < Ccpu Cspice Imozilla Cmysql Iapache <
+7.9   3  0  5       Csim     Cgcc     Ibash    (IDLE)       < Ccpu Cspice Imozilla Cmysql Iapache <
+8.0   4  0  4       Csim     Cgcc     Ibash    Ccpu         < Cspice Imozilla Cmysql Iapache <
+8.1   3  0  5       Csim     Cgcc     (IDLE)   Ccpu         < Cspice Imozilla Cmysql Iapache Ibash <
+8.2   3  0  5       Csim     (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc <
+8.3   3  0  5       Csim     (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc <
+8.4   2  0  6       (IDLE)   (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc Csim <
+8.5   2  0  6       (IDLE)   (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc Csim <
+8.6   2  0  6       (IDLE)   (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc Csim <
+8.7   2  0  6       (IDLE)   (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc Csim <
+8.8   2  0  6       (IDLE)   (IDLE)   Cspice   Ccpu         < Imozilla Cmysql Iapache Ibash Cgcc Csim <
+8.9   1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu <
+9.0   1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu <
+9.1   1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu <
+9.2   1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu <
+9.3   0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+9.4   0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+9.5   0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+9.6   0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+9.7   0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+9.8   1  0  7       (IDLE)   Imozilla (IDLE)   (IDLE)       < Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+9.9   1  0  7       (IDLE)   Imozilla (IDLE)   (IDLE)       < Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+10.0  1  0  7       (IDLE)   Imozilla (IDLE)   (IDLE)       < Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+10.1  1  0  7       (IDLE)   Imozilla (IDLE)   (IDLE)       < Cmysql Iapache Ibash Cgcc Csim Ccpu Cspice <
+10.2  2  0  6       Cmysql   Imozilla (IDLE)   (IDLE)       < Iapache Ibash Cgcc Csim Ccpu Cspice <
+10.3  2  0  6       Cmysql   Imozilla (IDLE)   (IDLE)       < Iapache Ibash Cgcc Csim Ccpu Cspice <
+10.4  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cgcc Csim Ccpu Cspice Imozilla <
+10.5  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cgcc Csim Ccpu Cspice Imozilla <
+10.6  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cgcc Csim Ccpu Cspice Imozilla <
+10.7  2  0  6       Cmysql   (IDLE)   (IDLE)   Iapache      < Ibash Cgcc Csim Ccpu Cspice Imozilla <
+10.8  2  0  6       Cmysql   (IDLE)   (IDLE)   Iapache      < Ibash Cgcc Csim Ccpu Cspice Imozilla <
+10.9  2  0  6       Cmysql   (IDLE)   (IDLE)   Iapache      < Ibash Cgcc Csim Ccpu Cspice Imozilla <
+11.0  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Ibash Cgcc Csim Ccpu Cspice Imozilla Iapache <
+11.1  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Ibash Cgcc Csim Ccpu Cspice Imozilla Iapache <
+11.2  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Cgcc Csim Ccpu Cspice Imozilla Iapache Cmysql <
+11.3  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Cgcc Csim Ccpu Cspice Imozilla Iapache Cmysql <
+11.4  1  0  7       (IDLE)   (IDLE)   Ibash    (IDLE)       < Cgcc Csim Ccpu Cspice Imozilla Iapache Cmysql <
+11.5  1  0  7       (IDLE)   (IDLE)   Ibash    (IDLE)       < Cgcc Csim Ccpu Cspice Imozilla Iapache Cmysql <
+11.6  1  0  7       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Csim Ccpu Cspice Imozilla Iapache Cmysql Ibash <
+11.7  1  0  7       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Csim Ccpu Cspice Imozilla Iapache Cmysql Ibash <
+11.8  1  0  7       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Csim Ccpu Cspice Imozilla Iapache Cmysql Ibash <
+11.9  1  0  7       (IDLE)   Cgcc     (IDLE)   (IDLE)       < Csim Ccpu Cspice Imozilla Iapache Cmysql Ibash <
+12.0  2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Ccpu Cspice Imozilla Iapache Cmysql Ibash <
+12.1  2  0  6       Csim     Cgcc     (IDLE)   (IDLE)       < Ccpu Cspice Imozilla Iapache Cmysql Ibash <
+12.2  3  0  5       Csim     Cgcc     Ccpu     (IDLE)       < Cspice Imozilla Iapache Cmysql Ibash <
+12.3  3  0  5       Csim     Cgcc     Ccpu     (IDLE)       < Cspice Imozilla Iapache Cmysql Ibash <
+12.4  2  0  6       Csim     (IDLE)   Ccpu     (IDLE)       < Cspice Imozilla Iapache Cmysql Ibash Cgcc <
+12.5  3  0  5       Csim     (IDLE)   Ccpu     Cspice       < Imozilla Iapache Cmysql Ibash Cgcc <
+12.6  3  0  5       Csim     (IDLE)   Ccpu     Cspice       < Imozilla Iapache Cmysql Ibash Cgcc <
+12.7  3  0  5       Csim     (IDLE)   Ccpu     Cspice       < Imozilla Iapache Cmysql Ibash Cgcc <
+12.8  3  0  5       Csim     (IDLE)   Ccpu     Cspice       < Imozilla Iapache Cmysql Ibash Cgcc <
+12.9  3  0  5       Csim     (IDLE)   Ccpu     Cspice       < Imozilla Iapache Cmysql Ibash Cgcc <
+13.0  2  0  6       Csim     (IDLE)   (IDLE)   Cspice       < Imozilla Iapache Cmysql Ibash Cgcc Ccpu <
+13.1  1  0  7       (IDLE)   (IDLE)   (IDLE)   Cspice       < Imozilla Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.2  1  0  7       (IDLE)   (IDLE)   (IDLE)   Cspice       < Imozilla Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.3  1  0  7       (IDLE)   (IDLE)   (IDLE)   Cspice       < Imozilla Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.4  1  0  7       (IDLE)   (IDLE)   (IDLE)   Cspice       < Imozilla Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.5  1  0  7       (IDLE)   (IDLE)   (IDLE)   Cspice       < Imozilla Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.6  2  0  6       (IDLE)   (IDLE)   Imozilla Cspice       < Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.7  2  0  6       (IDLE)   (IDLE)   Imozilla Cspice       < Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.8  2  0  6       (IDLE)   (IDLE)   Imozilla Cspice       < Iapache Cmysql Ibash Cgcc Ccpu Csim <
+13.9  2  0  6       (IDLE)   Iapache  (IDLE)   Cspice       < Cmysql Ibash Cgcc Ccpu Csim Imozilla <
+14.0  2  0  6       (IDLE)   Iapache  (IDLE)   Cspice       < Cmysql Ibash Cgcc Ccpu Csim Imozilla <
+14.1  2  0  6       Cmysql   Iapache  (IDLE)   (IDLE)       < Ibash Cgcc Ccpu Csim Imozilla Cspice <
+14.2  2  0  6       Cmysql   Iapache  (IDLE)   (IDLE)       < Ibash Cgcc Ccpu Csim Imozilla Cspice <
+14.3  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Ibash Cgcc Ccpu Csim Imozilla Cspice Iapache <
+14.4  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Ibash Cgcc Ccpu Csim Imozilla Cspice Iapache <
+14.5  2  0  6       Cmysql   (IDLE)   (IDLE)   Ibash        < Cgcc Ccpu Csim Imozilla Cspice Iapache <
+14.6  2  0  6       Cmysql   (IDLE)   (IDLE)   Ibash        < Cgcc Ccpu Csim Imozilla Cspice Iapache <
+14.7  2  0  6       Cmysql   (IDLE)   (IDLE)   Ibash        < Cgcc Ccpu Csim Imozilla Cspice Iapache <
+14.8  3  0  5       Cmysql   Cgcc     (IDLE)   Ibash        < Ccpu Csim Imozilla Cspice Iapache <
+14.9  3  0  5       Cmysql   Cgcc     (IDLE)   Ibash        < Ccpu Csim Imozilla Cspice Iapache <
+15.0  3  0  5       Cmysql   Cgcc     Ccpu     (IDLE)       < Csim Imozilla Cspice Iapache Ibash <
+15.1  3  0  5       Cmysql   Cgcc     Ccpu     (IDLE)       < Csim Imozilla Cspice Iapache Ibash <
+15.2  3  0  5       Cmysql   Cgcc     Ccpu     (IDLE)       < Csim Imozilla Cspice Iapache Ibash <
+15.3  3  0  5       Cmysql   Cgcc     Ccpu     (IDLE)       < Csim Imozilla Cspice Iapache Ibash <
+15.4  4  0  4       Cmysql   Cgcc     Ccpu     Csim         < Imozilla Cspice Iapache Ibash <
+15.5  4  0  4       Cmysql   Cgcc     Ccpu     Csim         < Imozilla Cspice Iapache Ibash <
+15.6  3  0  5       (IDLE)   Cgcc     Ccpu     Csim         < Imozilla Cspice Iapache Ibash Cmysql <
+15.7  2  0  6       (IDLE)   Cgcc     (IDLE)   Csim         < Imozilla Cspice Iapache Ibash Cmysql Ccpu <
+15.8  2  0  6       (IDLE)   Cgcc     (IDLE)   Csim         < Imozilla Cspice Iapache Ibash Cmysql Ccpu <
+15.9  2  0  6       (IDLE)   Cgcc     Imozilla (IDLE)       < Cspice Iapache Ibash Cmysql Ccpu Csim <
+16.0  1  0  7       (IDLE)   (IDLE)   Imozilla (IDLE)       < Cspice Iapache Ibash Cmysql Ccpu Csim Cgcc <
+16.1  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.2  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.3  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.4  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.5  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.6  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.7  2  0  6       Cspice   Iapache  (IDLE)   (IDLE)       < Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.8  2  0  6       Cspice   Iapache  (IDLE)   (IDLE)       < Ibash Cmysql Ccpu Csim Cgcc Imozilla <
+16.9  1  0  7       Cspice   (IDLE)   (IDLE)   (IDLE)       < Ibash Cmysql Ccpu Csim Cgcc Imozilla Iapache <
+17.0  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Cmysql Ccpu Csim Cgcc Imozilla Iapache Cspice <
+17.1  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Cmysql Ccpu Csim Cgcc Imozilla Iapache Cspice <
+17.2  1  0  7       (IDLE)   (IDLE)   (IDLE)   Ibash        < Cmysql Ccpu Csim Cgcc Imozilla Iapache Cspice <
+17.3  1  0  7       (IDLE)   (IDLE)   (IDLE)   Ibash        < Cmysql Ccpu Csim Cgcc Imozilla Iapache Cspice <
+17.4  2  0  6       (IDLE)   (IDLE)   Cmysql   Ibash        < Ccpu Csim Cgcc Imozilla Iapache Cspice <
+17.5  1  0  7       (IDLE)   (IDLE)   Cmysql   (IDLE)       < Ccpu Csim Cgcc Imozilla Iapache Cspice Ibash <
+17.6  2  0  6       (IDLE)   Ccpu     Cmysql   (IDLE)       < Csim Cgcc Imozilla Iapache Cspice Ibash <
+17.7  2  0  6       (IDLE)   Ccpu     Cmysql   (IDLE)       < Csim Cgcc Imozilla Iapache Cspice Ibash <
+17.8  3  0  5       (IDLE)   Ccpu     Cmysql   Csim         < Cgcc Imozilla Iapache Cspice Ibash <
+17.9  3  0  5       (IDLE)   Ccpu     Cmysql   Csim         < Cgcc Imozilla Iapache Cspice Ibash <
+18.0  4  0  4       Cgcc     Ccpu     Cmysql   Csim         < Imozilla Iapache Cspice Ibash <
+18.1  4  0  4       Cgcc     Ccpu     Cmysql   Csim         < Imozilla Iapache Cspice Ibash <
+18.2  4  0  4       Cgcc     Ccpu     Cmysql   Csim         < Imozilla Iapache Cspice Ibash <
+18.3  4  0  4       Cgcc     Ccpu     Cmysql   Csim         < Imozilla Iapache Cspice Ibash <
+18.4  3  0  5       Cgcc     Ccpu     Cmysql   (IDLE)       < Imozilla Iapache Cspice Ibash Csim <
+18.5  2  0  6       Cgcc     (IDLE)   Cmysql   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu <
+18.6  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+18.7  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+18.8  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+18.9  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+19.0  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+19.1  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+19.2  1  0  7       Cgcc     (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Cspice Ibash Csim Ccpu Cmysql <
+19.3  2  0  6       Cgcc     (IDLE)   Imozilla (IDLE)       < Iapache Cspice Ibash Csim Ccpu Cmysql <
+19.4  2  0  6       Cgcc     (IDLE)   Imozilla (IDLE)       < Iapache Cspice Ibash Csim Ccpu Cmysql <
+19.5  1  0  7       (IDLE)   (IDLE)   Imozilla (IDLE)       < Iapache Cspice Ibash Csim Ccpu Cmysql Cgcc <
+19.6  1  0  7       (IDLE)   (IDLE)   Imozilla (IDLE)       < Iapache Cspice Ibash Csim Ccpu Cmysql Cgcc <
+19.7  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache Cspice Ibash Csim Ccpu Cmysql Cgcc Imozilla <
+19.8  1  0  7       (IDLE)   (IDLE)   (IDLE)   Iapache      < Cspice Ibash Csim Ccpu Cmysql Cgcc Imozilla <
+19.9  1  0  7       (IDLE)   (IDLE)   (IDLE)   Iapache      < Cspice Ibash Csim Ccpu Cmysql Cgcc Imozilla <
+20.0  2  0  6       (IDLE)   Cspice   (IDLE)   Iapache      < Ibash Csim Ccpu Cmysql Cgcc Imozilla <
+20.1  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Ibash Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.2  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Ibash Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.3  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Ibash Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.4  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Ibash Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.5  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Ibash Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.6  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Ibash Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.7  2  0  6       (IDLE)   Cspice   Ibash    (IDLE)       < Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.8  2  0  6       (IDLE)   Cspice   Ibash    (IDLE)       < Csim Ccpu Cmysql Cgcc Imozilla Iapache <
+20.9  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Csim Ccpu Cmysql Cgcc Imozilla Iapache Ibash <
+21.0  1  0  7       (IDLE)   Cspice   (IDLE)   (IDLE)       < Csim Ccpu Cmysql Cgcc Imozilla Iapache Ibash <
+21.1  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Csim Ccpu Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.2  1  0  7       Csim     (IDLE)   (IDLE)   (IDLE)       < Ccpu Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.3  1  0  7       Csim     (IDLE)   (IDLE)   (IDLE)       < Ccpu Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.4  2  0  6       Csim     (IDLE)   (IDLE)   Ccpu         < Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.5  2  0  6       Csim     (IDLE)   (IDLE)   Ccpu         < Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.6  2  0  6       Csim     (IDLE)   (IDLE)   Ccpu         < Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.7  2  0  6       Csim     (IDLE)   (IDLE)   Ccpu         < Cmysql Cgcc Imozilla Iapache Ibash Cspice <
+21.8  3  0  5       Csim     (IDLE)   Cmysql   Ccpu         < Cgcc Imozilla Iapache Ibash Cspice <
+21.9  3  0  5       Csim     (IDLE)   Cmysql   Ccpu         < Cgcc Imozilla Iapache Ibash Cspice <
+22.0  3  0  5       (IDLE)   Cgcc     Cmysql   Ccpu         < Imozilla Iapache Ibash Cspice Csim <
+22.1  3  0  5       (IDLE)   Cgcc     Cmysql   Ccpu         < Imozilla Iapache Ibash Cspice Csim <
+22.2  2  0  6       (IDLE)   Cgcc     Cmysql   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu <
+22.3  2  0  6       (IDLE)   Cgcc     Cmysql   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu <
+22.4  2  0  6       (IDLE)   Cgcc     Cmysql   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu <
+22.5  2  0  6       (IDLE)   Cgcc     Cmysql   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu <
+22.6  2  0  6       (IDLE)   Cgcc     Cmysql   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu <
+22.7  2  0  6       (IDLE)   Cgcc     Cmysql   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu <
+22.8  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+22.9  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.0  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.1  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.2  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.3  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.4  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.5  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Imozilla Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.6  1  0  7       Imozilla (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.7  1  0  7       Imozilla (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.8  1  0  7       Imozilla (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql <
+23.9  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla <
+24.0  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla <
+24.1  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Iapache Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla <
+24.2  1  0  7       (IDLE)   (IDLE)   (IDLE)   Iapache      < Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla <
+24.3  1  0  7       (IDLE)   (IDLE)   (IDLE)   Iapache      < Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla <
+24.4  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+24.5  0  0  8       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Ibash Cspice Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+24.6  1  0  7       (IDLE)   Ibash    (IDLE)   (IDLE)       < Cspice Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+24.7  1  0  7       (IDLE)   Ibash    (IDLE)   (IDLE)       < Cspice Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+24.8  1  0  7       (IDLE)   Ibash    (IDLE)   (IDLE)       < Cspice Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+24.9  2  0  6       (IDLE)   Ibash    Cspice   (IDLE)       < Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+25.0  2  0  6       (IDLE)   Ibash    Cspice   (IDLE)       < Csim Ccpu Cgcc Cmysql Imozilla Iapache <
+25.1  1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Csim Ccpu Cgcc Cmysql Imozilla Iapache Ibash <
+25.2  1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Csim Ccpu Cgcc Cmysql Imozilla Iapache Ibash <
+25.3  1  0  7       (IDLE)   (IDLE)   Cspice   (IDLE)       < Csim Ccpu Cgcc Cmysql Imozilla Iapache Ibash <
+25.4  2  0  6       Csim     (IDLE)   Cspice   (IDLE)       < Ccpu Cgcc Cmysql Imozilla Iapache Ibash <
+25.5  2  0  6       Csim     (IDLE)   Cspice   (IDLE)       < Ccpu Cgcc Cmysql Imozilla Iapache Ibash <
+25.6  3  0  5       Csim     Ccpu     Cspice   (IDLE)       < Cgcc Cmysql Imozilla Iapache Ibash <
+25.7  3  0  5       Csim     Ccpu     Cspice   (IDLE)       < Cgcc Cmysql Imozilla Iapache Ibash <
+25.8  3  0  5       Csim     Ccpu     Cspice   (IDLE)       < Cgcc Cmysql Imozilla Iapache Ibash <
+25.9  4  0  4       Csim     Ccpu     Cspice   Cgcc         < Cmysql Imozilla Iapache Ibash <
+26.0  4  0  4       Csim     Ccpu     Cspice   Cgcc         < Cmysql Imozilla Iapache Ibash <
+26.1  4  1  3       Csim     Ccpu     Cspice   Cgcc         < Imozilla Iapache Ibash <
+26.2  4  1  3       Cmysql   Ccpu     Cspice   Cgcc         < Imozilla Iapache Ibash <
+26.3  4  0  4       Cmysql   Csim     Cspice   Cgcc         < Imozilla Iapache Ibash Ccpu <
+26.4  4  1  3       Cmysql   Csim     Cspice   Cgcc         < Iapache Ibash Ccpu <
+26.5  4  0  4       Cmysql   Csim     Imozilla Cgcc         < Iapache Ibash Ccpu Cspice <
+26.6  4  0  4       Cmysql   Csim     Imozilla Cgcc         < Iapache Ibash Ccpu Cspice <
+26.7  3  0  5       Cmysql   Csim     (IDLE)   Cgcc         < Iapache Ibash Ccpu Cspice Imozilla <
+26.8  3  0  5       Cmysql   Csim     (IDLE)   Cgcc         < Iapache Ibash Ccpu Cspice Imozilla <
+26.9  4  0  4       Cmysql   Csim     Iapache  Cgcc         < Ibash Ccpu Cspice Imozilla <
+27.0  4  0  4       Cmysql   Csim     Iapache  Cgcc         < Ibash Ccpu Cspice Imozilla <
+27.1  2  0  6       Cmysql   (IDLE)   Iapache  (IDLE)       < Ibash Ccpu Cspice Imozilla Csim Cgcc <
+27.2  1  0  7       Cmysql   (IDLE)   (IDLE)   (IDLE)       < Ibash Ccpu Cspice Imozilla Csim Cgcc Iapache <
+27.3  2  0  6       Cmysql   Ibash    (IDLE)   (IDLE)       < Ccpu Cspice Imozilla Csim Cgcc Iapache <
+27.4  2  0  6       Cmysql   Ibash    (IDLE)   (IDLE)       < Ccpu Cspice Imozilla Csim Cgcc Iapache <
+27.5  3  0  5       Cmysql   Ibash    Ccpu     (IDLE)       < Cspice Imozilla Csim Cgcc Iapache <
+27.6  3  0  5       Cmysql   Ibash    Ccpu     (IDLE)       < Cspice Imozilla Csim Cgcc Iapache <
+27.7  3  0  5       Cspice   Ibash    Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql <
+27.8  2  0  6       Cspice   (IDLE)   Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql Ibash <
+27.9  2  0  6       Cspice   (IDLE)   Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql Ibash <
+28.0  2  0  6       Cspice   (IDLE)   Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql Ibash <
+28.1  2  0  6       Cspice   (IDLE)   Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql Ibash <
+28.2  2  0  6       Cspice   (IDLE)   Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql Ibash <
+28.3  2  0  6       Cspice   (IDLE)   Ccpu     (IDLE)       < Imozilla Csim Cgcc Iapache Cmysql Ibash <
+28.4  2  0  6       Cspice   Imozilla (IDLE)   (IDLE)       < Csim Cgcc Iapache Cmysql Ibash Ccpu <
+28.5  2  0  6       Cspice   Imozilla (IDLE)   (IDLE)       < Csim Cgcc Iapache Cmysql Ibash Ccpu <
+28.6  0  0  7       (IDLE)   (IDLE)   (IDLE)   (IDLE)       < Csim Cgcc Iapache Cmysql Ibash Ccpu Cspice <
+28.7  1  0  6       (IDLE)   (IDLE)   Csim     (IDLE)       < Cgcc Iapache Cmysql Ibash Ccpu Cspice <
+28.8  1  0  6       (IDLE)   (IDLE)   Csim     (IDLE)       < Cgcc Iapache Cmysql Ibash Ccpu Cspice <
+28.9  2  0  5       (IDLE)   (IDLE)   Csim     Cgcc         < Iapache Cmysql Ibash Ccpu Cspice <
+29.0  2  0  5       (IDLE)   (IDLE)   Csim     Cgcc         < Iapache Cmysql Ibash Ccpu Cspice <
+29.1  2  0  5       (IDLE)   (IDLE)   Csim     Cgcc         < Iapache Cmysql Ibash Ccpu Cspice <
+29.2  3  0  4       (IDLE)   Iapache  Csim     Cgcc         < Cmysql Ibash Ccpu Cspice <
+29.3  3  0  4       (IDLE)   Iapache  Csim     Cgcc         < Cmysql Ibash Ccpu Cspice <
+29.4  4  0  3       Cmysql   Iapache  Csim     Cgcc         < Ibash Ccpu Cspice <
+29.5  3  0  4       Cmysql   Iapache  (IDLE)   Cgcc         < Ibash Ccpu Cspice Csim <
+29.6  2  0  5       Cmysql   (IDLE)   (IDLE)   Cgcc         < Ibash Ccpu Cspice Csim Iapache <
+29.7  2  0  5       Cmysql   (IDLE)   (IDLE)   Cgcc         < Ibash Ccpu Cspice Csim Iapache <
+29.8  2  0  5       Cmysql   (IDLE)   (IDLE)   Cgcc         < Ibash Ccpu Cspice Csim Iapache <
+29.9  3  0  4       Cmysql   (IDLE)   Ibash    Cgcc         < Ccpu Cspice Csim Iapache <
+30.0  3  0  4       Cmysql   (IDLE)   Ibash    Cgcc         < Ccpu Cspice Csim Iapache <
+30.1  4  0  3       Cmysql   Ccpu     Ibash    Cgcc         < Cspice Csim Iapache <
+30.2  3  0  4       Cmysql   Ccpu     (IDLE)   Cgcc         < Cspice Csim Iapache Ibash <
+30.3  4  0  3       Cmysql   Ccpu     Cspice   Cgcc         < Csim Iapache Ibash <
+30.4  3  0  4       Cmysql   Ccpu     Cspice   (IDLE)       < Csim Iapache Ibash Cgcc <
+30.5  4  0  3       Cmysql   Ccpu     Cspice   Csim         < Iapache Ibash Cgcc <
+30.6  3  0  4       (IDLE)   Ccpu     Cspice   Csim         < Iapache Ibash Cgcc Cmysql <
+30.7  3  0  4       (IDLE)   Ccpu     Cspice   Csim         < Iapache Ibash Cgcc Cmysql <
+30.8  3  0  4       (IDLE)   Ccpu     Cspice   Csim         < Iapache Ibash Cgcc Cmysql <
+30.9  3  0  4       (IDLE)   Ccpu     Cspice   Csim         < Iapache Ibash Cgcc Cmysql <
+31.0  2  0  4       (IDLE)   (IDLE)   Cspice   Csim         < Iapache Ibash Cgcc Cmysql <
+31.1  3  0  3       (IDLE)   Iapache  Cspice   Csim         < Ibash Cgcc Cmysql <
+31.2  3  0  3       (IDLE)   Iapache  Cspice   Csim         < Ibash Cgcc Cmysql <
+31.3  2  0  4       (IDLE)   (IDLE)   Cspice   Csim         < Ibash Cgcc Cmysql Iapache <
+31.4  1  0  5       (IDLE)   (IDLE)   (IDLE)   Csim         < Ibash Cgcc Cmysql Iapache Cspice <
+31.5  1  0  5       (IDLE)   (IDLE)   (IDLE)   Csim         < Ibash Cgcc Cmysql Iapache Cspice <
+31.6  1  0  5       (IDLE)   (IDLE)   (IDLE)   Csim         < Ibash Cgcc Cmysql Iapache Cspice <
+31.7  1  0  5       (IDLE)   (IDLE)   (IDLE)   Csim         < Ibash Cgcc Cmysql Iapache Cspice <
+31.8  2  0  4       Ibash    (IDLE)   (IDLE)   Csim         < Cgcc Cmysql Iapache Cspice <
+31.9  2  0  4       Ibash    (IDLE)   (IDLE)   Csim         < Cgcc Cmysql Iapache Cspice <
+32.0  2  0  4       (IDLE)   (IDLE)   Cgcc     Csim         < Cmysql Iapache Cspice Ibash <
+32.1  2  0  4       (IDLE)   (IDLE)   Cgcc     Csim         < Cmysql Iapache Cspice Ibash <
+32.2  2  0  4       (IDLE)   (IDLE)   Cgcc     Csim         < Cmysql Iapache Cspice Ibash <
+32.3  2  0  4       (IDLE)   (IDLE)   Cgcc     Csim         < Cmysql Iapache Cspice Ibash <
+32.4  3  0  3       (IDLE)   Cmysql   Cgcc     Csim         < Iapache Cspice Ibash <
+32.5  3  0  3       (IDLE)   Cmysql   Cgcc     Csim         < Iapache Cspice Ibash <
+32.6  2  0  4       (IDLE)   Cmysql   Cgcc     (IDLE)       < Iapache Cspice Ibash Csim <
+32.7  2  0  4       (IDLE)   Cmysql   Cgcc     (IDLE)       < Iapache Cspice Ibash Csim <
+32.8  1  0  5       (IDLE)   Cmysql   (IDLE)   (IDLE)       < Iapache Cspice Ibash Csim Cgcc <
+32.9  2  0  4       (IDLE)   Cmysql   (IDLE)   Iapache      < Cspice Ibash Csim Cgcc <
+33.0  2  0  4       (IDLE)   Cmysql   (IDLE)   Iapache      < Cspice Ibash Csim Cgcc <
+33.1  2  0  4       (IDLE)   Cmysql   (IDLE)   Iapache      < Cspice Ibash Csim Cgcc <
+33.2  2  0  3       (IDLE)   Cmysql   Cspice   (IDLE)       < Ibash Csim Cgcc <
+33.3  2  0  3       (IDLE)   Cmysql   Cspice   (IDLE)       < Ibash Csim Cgcc <
+33.4  1  0  4       (IDLE)   (IDLE)   Cspice   (IDLE)       < Ibash Csim Cgcc Cmysql <
+33.5  1  0  4       (IDLE)   (IDLE)   Cspice   (IDLE)       < Ibash Csim Cgcc Cmysql <
+33.6  2  0  3       (IDLE)   (IDLE)   Cspice   Ibash        < Csim Cgcc Cmysql <
+33.7  2  0  3       (IDLE)   (IDLE)   Cspice   Ibash        < Csim Cgcc Cmysql <
+33.8  2  0  3       (IDLE)   (IDLE)   Cspice   Ibash        < Csim Cgcc Cmysql <
+33.9  2  0  3       (IDLE)   (IDLE)   Cspice   Ibash        < Csim Cgcc Cmysql <
+34.0  3  0  2       (IDLE)   Csim     Cspice   Ibash        < Cgcc Cmysql <
+34.1  2  0  2       (IDLE)   Csim     Cspice   (IDLE)       < Cgcc Cmysql <
+34.2  2  0  2       (IDLE)   Csim     Cspice   (IDLE)       < Cgcc Cmysql <
+34.3  3  0  1       Cgcc     Csim     Cspice   (IDLE)       < Cmysql <
+34.4  3  0  1       Cgcc     Csim     Cspice   (IDLE)       < Cmysql <
+34.5  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+34.6  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+34.7  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+34.8  3  0  1       Cgcc     Csim     (IDLE)   Cmysql       < Cspice <
+34.9  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+35.0  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+35.1  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+35.2  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+35.3  4  0  0       Cgcc     Csim     Cspice   Cmysql       < <
+35.4  3  0  1       Cgcc     (IDLE)   Cspice   Cmysql       < Csim <
+35.5  2  0  1       (IDLE)   (IDLE)   Cspice   Cmysql       < Csim <
+35.6  2  0  1       (IDLE)   (IDLE)   Cspice   Cmysql       < Csim <
+35.7  2  0  1       (IDLE)   (IDLE)   Cspice   Cmysql       < Csim <
+35.8  1  0  1       (IDLE)   (IDLE)   (IDLE)   Cmysql       < Csim <
+35.9  2  0  0       (IDLE)   Csim     (IDLE)   Cmysql       < <
+36.0  1  0  1       (IDLE)   Csim     (IDLE)   (IDLE)       < Cmysql <
+36.1  2  0  0       Cmysql   Csim     (IDLE)   (IDLE)       < <
+36.2  2  0  0       Cmysql   Csim     (IDLE)   (IDLE)       < <
+36.3  2  0  0       Cmysql   Csim     (IDLE)   (IDLE)       < <
+36.4  2  0  0       Cmysql   Csim     (IDLE)   (IDLE)       < <
+36.5  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+36.6  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+36.7  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+36.8  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+36.9  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+37.0  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+37.1  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+37.2  1  0  0       Cmysql   (IDLE)   (IDLE)   (IDLE)       < <
+
+
+Total Context Switches: 284
+Total execution time: 37.3 s
+Total time spent in READY state: 0.3 s

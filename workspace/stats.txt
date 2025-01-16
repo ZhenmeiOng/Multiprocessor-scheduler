@@ -1,0 +1,142 @@
+========================================
+    FCFS    FCFS    FCFS    
+----------------------------------------
+1 core
+  context switches: 101.67 ± 4.67
+  execution time:    70.11 ± 1.21
+  wait time:        168.73 ± 3.17
+
+2 cores
+  context switches: 129.80 ± 2.20
+  execution time:    42.62 ± 0.98
+  wait time:         31.68 ± 1.58
+
+4 cores
+  context switches: 176.07 ± 0.93
+  execution time:    37.00 ± 0.00
+  wait time:          0.29 ± 0.11
+
+========================================
+    PA    PA    PA    
+----------------------------------------
+1 core
+  context switches: 165.00 ± 0.00
+  execution time:    77.80 ± 0.00
+  wait time:        275.90 ± 0.00
+
+2 cores
+  context switches: 172.07 ± 6.07
+  execution time:    47.03 ± 1.73
+  wait time:        106.30 ± 10.40
+
+4 cores
+  context switches: 187.13 ± 5.87
+  execution time:    37.03 ± 0.67
+  wait time:          0.26 ± 0.74
+
+----------------------------------------
+weight-1
+1 core
+  context switches:  94.00 ± 0.00
+  execution time:    67.90 ± 0.00
+  wait time:        366.70 ± 0.00
+
+2 cores
+  context switches: 126.00 ± 0.00
+  execution time:    38.59 ± 0.09
+  wait time:         53.19 ± 0.19
+
+4 cores
+* context switches: 189.53 ± 3.53 (176.73 ± 12.52)
+  execution time:    36.90 ± 0.50
+  wait time:          0.24 ± 0.46
+
+----------------------------------------
+weight-2
+1 core
+  context switches:  94.00 ± 0.00
+  execution time:    67.90 ± 0.00
+  wait time:        373.70 ± 0.00
+
+2 cores
+  context switches: 122.27 ± 1.73
+  execution time:    39.12 ± 0.52
+  wait time:         49.33 ± 5.03
+
+4 cores
+  context switches: 179.93 ± 0.93
+  execution time:    36.92 ± 0.22
+  wait time:          0.29 ± 0.19
+
+----------------------------------------
+weight-3
+1 core
+  context switches:  94.00 ± 0.00
+  execution time:    67.90 ± 0.00
+  wait time:        374.40 ± 0.00
+
+2 cores
+  context switches: 124.20 ± 2.80
+  execution time:    39.71 ± 0.19
+  wait time:         58.39 ± 8.59
+
+4 cores
+  context switches: 176.60 ± 1.40
+  execution time:    36.98 ± 0.28
+  wait time:          0.22 ± 0.12
+
+========================================
+    RR    RR    RR    
+----------------------------------------
+time-200ms
+1 core
+  context switches: 363.00 ± 0.00
+  execution time:    67.90 ± 0.00
+  wait time:        284.40 ± 0.00
+
+2 cores
+  context switches: 396.40 ± 1.60
+  execution time:    40.02 ± 0.48
+  wait time:         40.88 ± 1.12
+
+4 cores
+  context switches: 446.47 ± 1.47
+  execution time:    37.57 ± 0.57
+  wait time:          0.08 ± 0.42
+
+----------------------------------------
+time-400ms
+1 core
+  context switches: 202.00 ± 0.00
+  execution time:    67.90 ± 0.00
+  wait time:        291.70 ± 0.00
+
+2 cores
+  context switches: 232.87 ± 1.87
+  execution time:    40.25 ± 0.65
+  wait time:         38.07 ± 5.13
+
+4 cores
+  context switches: 285.53 ± 1.53
+  execution time:    37.08 ± 0.62
+  wait time:          0.07 ± 0.23
+
+----------------------------------------
+time-800ms
+1 core
+  context switches: 131.00 ± 0.00
+  execution time:    67.90 ± 0.00
+  wait time:        317.10 ± 0.00
+
+2 cores
+  context switches: 163.93 ± 1.07
+  execution time:    40.33 ± 0.27
+  wait time:         44.88 ± 1.52
+
+4 cores
+  context switches: 213.00 ± 0.00
+  execution time:    36.70 ± 0.00
+  wait time:          0.50 ± 0.00
+
+----------------------------------------
+========================================
