@@ -9,8 +9,8 @@
 7. `gdb ./os-sim`
 ---
 To run the program manually:
-`tui enable` - to see the program runs line by line
-`run <num of CPUs>`
+- `tui enable` - to see the program runs line by line
+- `run <num of CPUs>`
 
 ---
 8. `python3 test.py`
